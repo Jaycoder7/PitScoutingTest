@@ -60,7 +60,7 @@ var config_data = `
      // "code": "as",
      // "type": "field_image",
      // "filename": "2023/field_image.png"
-    }
+      }
   ],
   "auton": [
     { "name": "Mobility?",
