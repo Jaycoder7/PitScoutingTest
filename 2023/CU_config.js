@@ -30,7 +30,7 @@ var config_data = `
       "code": "t",
       "type": "team",
       "min": 1,
-      }
+    }
   ],
   "auton": [
     { "name": "Mobility?",
