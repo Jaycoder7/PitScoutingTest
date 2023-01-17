@@ -955,7 +955,7 @@ function moveTouch(e) {
 };
 
 function swipePage(increment) {
-  if (qr_regenerate() == true) {
+  
     slides = document.getElementById("main-panel-holder").children
     if (slide + increment < slides.length && slide + increment >= 0) {
       slides[slide].style.display = "none";
@@ -964,7 +964,7 @@ function swipePage(increment) {
       slides[slide].style.display = "table";
       document.getElementById('data').innerHTML = "";
       document.getElementById('copyButton').setAttribute('value','Copy Data');
-    }
+    
   }
 }
 
