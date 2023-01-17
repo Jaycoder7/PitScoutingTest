@@ -1,5 +1,5 @@
 var config_data = `
-{
+{   
 
   "title": "Scouting App 2023",
   "page_title": "PIT SCOUTING APP",
@@ -165,14 +165,7 @@ var config_data = `
     },
     { "name": "Drive Type?",
       "code": "sd",
-      "type": "radio"
-      "choices": {
-        "Tank": "T<br>",
-        "Mechanum": "M<br>",
-        "Swerve": "S<br>",
-        "other": "O<br>"
-      },
-      "defaultValue":"Tank"
+      "type": "bool"
     },
     { "name": "Speed Rating",
       "code": "sr",
