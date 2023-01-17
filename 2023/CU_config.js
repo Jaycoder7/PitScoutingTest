@@ -70,7 +70,7 @@ var config_data = `
   "teleop": [
     { "name": "Cycle Timer",
       "code": "tct",
-      "type": "counter"
+      "type": "cycle"
     },
     { "name": "High Cube Scored",
       "code": "tuh",
@@ -120,7 +120,7 @@ var config_data = `
   "endgame": [
     { "name": "Docking Timer",
       "code": "dt",
-      "type": "counter"
+      "type": "timer"
     },
     { "name": "Final Status",
       "code": "fs",
