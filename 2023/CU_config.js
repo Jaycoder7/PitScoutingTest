@@ -170,9 +170,7 @@ var config_data = `
         "Tank": "T<br>",
         "Mechanum": "M<br>",
         "Swerve": "S<br>",
-        "other": "O<br>",
-     
-
+        "other": "O<br>"
       },
       "defaultValue":"T"
     },
