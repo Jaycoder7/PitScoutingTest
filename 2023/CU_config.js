@@ -173,7 +173,8 @@ var config_data = `
         "other": "O<br>",
      
 
-      }
+      },
+      "defaultValue":"T"
     },
     { "name": "Speed Rating",
       "code": "sr",
