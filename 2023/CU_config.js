@@ -2,7 +2,7 @@ var config_data = `
 {
 
   "title": "Scouting App 2023",
-  "page_title": "Charged Up",
+  "page_title": "PIT SCOUTING APP",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -27,7 +27,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Mobility?",
+    { "name": "Has Auto?",
       "code": "am",
       "type": "bool"
     },
@@ -55,7 +55,7 @@ var config_data = `
       "code": "aol",
       "type": "counter"
     },
-    { "name": "Docked",
+    { "name": "Trys to dock?",
       "code": "ad",
       "type":"radio",
       "choices": {
@@ -70,7 +70,7 @@ var config_data = `
   "teleop": [
     { "name": "Cycle Timer",
       "code": "tct",
-      "type": "cycle"
+      "type": "counter"
     },
     { "name": "High Cube Scored",
       "code": "tuh",
@@ -96,11 +96,8 @@ var config_data = `
       "code": "tol",
       "type": "counter"
     },
-    { "name": "Feeder Count",
-      "code": "tfc",
-      "type": "counter"
-    },
-    { "name": "Was Defended",
+   
+    { "name": "Can Defend?",
       "code": "wd",
       "type": "bool"
     },
@@ -123,7 +120,7 @@ var config_data = `
   "endgame": [
     { "name": "Docking Timer",
       "code": "dt",
-      "type": "timer"
+      "type": "counter"
     },
     { "name": "Final Status",
       "code": "fs",
@@ -136,10 +133,6 @@ var config_data = `
         "not attempted": "Not attempted"
       },
       "defaultValue": "parked"
-    },
-    { "name": "# of alliance bots docked/engaged",
-      "code": "cn",
-      "type": "counter"
     }
   ],
   "postmatch": [
@@ -170,9 +163,17 @@ var config_data = `
       },
       "defaultValue": "good"
     },
-    { "name": "Swerve drive?",
+    { "name": "Drive Type?",
       "code": "sd",
-      "type": "bool"
+      "type": "radio"
+      "choices": {
+        "Tank": "T<br>",
+        "Mechanum": "M<br>",
+        "Swerve": "S<br>",
+        "other": "O<br>",
+     
+
+      }
     },
     { "name": "Speed Rating",
       "code": "sr",
@@ -185,14 +186,6 @@ var config_data = `
         "5": "5 (fast)"
       },
       "defaultValue":"3"
-    },
-    { "name": "Died/Tipped",
-      "code": "d",
-      "type": "bool"
-    },
-    { "name": "Avoided coopertition",
-      "code": "coo",
-      "type": "bool"
     },
     { "name": "Make good alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
