@@ -26,29 +26,11 @@ var config_data = `
       "max": 100,
       "required": "true"
     },
-    { "name": "Robot",
-      "code": "r",
-      "type": "robot",
-      "choices": {
-        "red1": "Red-1",
-        "blue1": "Blue-1<br>",
-        "red2": "Red-2",
-        "blue2": "Blue-2<br>",
-        "red3": "Red-3",
-        "blue3": "Blue-3"
-      },
-      "required":"true"
-    },
     { "name": "Team #",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "field_image",
-      "filename": "2023/field_image.png"
     }
   ],
   "auton": [
