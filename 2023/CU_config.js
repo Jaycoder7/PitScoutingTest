@@ -19,17 +19,6 @@ var config_data = `
       "required": "true",
       "disabled": "false"
     },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qual match": "Quals<br>",
-        "double elims": "Double Elimination<br>",
-        "finals": "Finals"
-      },
-      "defaultValue": "qual match",
-      "required": "true"
-    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
