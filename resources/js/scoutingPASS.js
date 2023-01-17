@@ -683,7 +683,7 @@ function resetRobot() {
 }
 
 
-function getLevel() {
+/*function getLevel() {
   if (document.getElementById("input_l_qual match").checked) {
     return "qual match";
   } else if (document.getElementById("input_l_de").checked) {
@@ -693,9 +693,10 @@ function getLevel() {
   } else {
     return "";
   }
+  */
 }
 
-function validateLevel() {
+/*function validateLevel() {
   if (document.getElementById("input_l_qual match").checked ||
     document.getElementById("input_l_de").checked ||
     document.getElementById("input_l_f").checked
@@ -704,6 +705,7 @@ function validateLevel() {
   } else {
     return false
   }
+  */
 }
 
 function validateData() {
