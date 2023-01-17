@@ -707,7 +707,7 @@ function resetRobot() {
   }
   
 }*/
-
+/*
 function validateData() {
   var ret = true
   var errStr = "Bad fields: ";
@@ -734,7 +734,7 @@ function validateData() {
   }
   return ret
 }
-
+*/
 function getData(useStr) {
   var str = ''
   var fd = new FormData()
@@ -1065,11 +1065,11 @@ function getCurrentTeamNumberFromRobot() {
     }
   }
 }
-
+/*
 function getCurrentMatchKey() {
   return document.getElementById("input_e").value + "_" + getLevel() + document.getElementById("input_m").value;
 }
-
+*/
 function getCurrentMatch() {
   return getMatch(getCurrentMatchKey());
 }
