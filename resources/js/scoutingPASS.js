@@ -821,7 +821,7 @@ function updateQRHeader() {
   document.getElementById("display_qr-info").textContent = str;
 }
 
-
+/*
 function qr_regenerate() {
   // Validate required pre-match date (event, match, level, robot, scouter)
   if (validateData() == false) {
@@ -838,7 +838,7 @@ function qr_regenerate() {
   updateQRHeader()
   return true
 }
-
+*/
 function qr_clear() {
   qr.clear()
 }
