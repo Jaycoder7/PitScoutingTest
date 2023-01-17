@@ -172,7 +172,7 @@ var config_data = `
         "Swerve": "S<br>",
         "other": "O<br>"
       },
-      "defaultValue":"T"
+      "defaultValue":"Tank"
     },
     { "name": "Speed Rating",
       "code": "sr",
