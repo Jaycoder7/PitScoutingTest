@@ -693,9 +693,9 @@ function resetRobot() {
   } else {
     return "";
   }
-  */
+  
 }
-
+*/
 /*function validateLevel() {
   if (document.getElementById("input_l_qual match").checked ||
     document.getElementById("input_l_de").checked ||
@@ -705,8 +705,8 @@ function resetRobot() {
   } else {
     return false
   }
-  */
-}
+  
+}*/
 
 function validateData() {
   var ret = true
