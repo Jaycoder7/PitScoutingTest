@@ -628,59 +628,8 @@ function configure() {
   return 0
 }
 
-function getRobot() {
-  if (document.getElementById("input_r_r1").checked) {
-    return "r1";
-  } else if (document.getElementById("input_r_r2").checked) {
-    return "r2";
-  } else if (document.getElementById("input_r_r3").checked) {
-    return "r3";
-  } else if (document.getElementById("input_r_b1").checked) {
-    return "b1";
-  } else if (document.getElementById("input_r_b2").checked) {
-    return "b2";
-  } else if (document.getElementById("input_r_b3").checked) {
-    return "b3";
-  } else {
-    return "";
-  }
-}
 
-function validateRobot() {
-  if (document.getElementById("input_r_red1").checked ||
-    document.getElementById("input_r_red2").checked ||
-    document.getElementById("input_r_red3").checked ||
-    document.getElementById("input_r_blue1").checked ||
-    document.getElementById("input_r_blue2").checked ||
-    document.getElementById("input_r_blue3").checked
-  ) {
-    return true
-  } else {
 
-    return false
-  }
-}
-
-function resetRobot() {
-  if (document.getElementById("input_r_red1").checked) {
-    document.getElementById("input_r_red1").checked = false
-  }
-  if (document.getElementById("input_r_red2").checked) {
-    document.getElementById("input_r_red2").checked = false
-  }
-  if (document.getElementById("input_r_red3").checked) {
-    document.getElementById("input_r_red3").checked = false
-  }
-  if (document.getElementById("input_r_blue1").checked) {
-    document.getElementById("input_r_blue1").checked = false
-  }
-  if (document.getElementById("input_r_blue2").checked) {
-    document.getElementById("input_r_blue2").checked = false
-  }
-  if (document.getElementById("input_r_blue3").checked) {
-    document.getElementById("input_r_blue3").checked = false
-  }
-}
 
 
 /*function getLevel() {
@@ -955,7 +904,7 @@ function moveTouch(e) {
 };
 
 function swipePage(increment) {
-  
+  if (qr_regenerate() == true) {
     slides = document.getElementById("main-panel-holder").children
     if (slide + increment < slides.length && slide + increment >= 0) {
       slides[slide].style.display = "none";
@@ -964,7 +913,7 @@ function swipePage(increment) {
       slides[slide].style.display = "table";
       document.getElementById('data').innerHTML = "";
       document.getElementById('copyButton').setAttribute('value','Copy Data');
-    
+    }
   }
 }
 
