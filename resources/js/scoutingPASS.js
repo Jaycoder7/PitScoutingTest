@@ -821,14 +821,14 @@ function updateQRHeader() {
   document.getElementById("display_qr-info").textContent = str;
 }
 
-/*
+
 function qr_regenerate() {
-  // Validate required pre-match date (event, match, level, robot, scouter)
+  /*// Validate required pre-match date (event, match, level, robot, scouter)
   if (validateData() == false) {
     // Don't allow a swipe until all required data is filled in
     return false
   }
-
+*/
   // Get data
   data = getData(true)
 
@@ -838,7 +838,7 @@ function qr_regenerate() {
   updateQRHeader()
   return true
 }
-*/
+
 function qr_clear() {
   qr.clear()
 }
