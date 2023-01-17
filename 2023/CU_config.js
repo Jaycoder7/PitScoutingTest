@@ -19,13 +19,6 @@ var config_data = `
       "required": "true",
       "disabled": "false"
     },
-    { "name": "Match #",
-      "code": "m",
-      "type": "match",
-      "min": 1,
-      "max": 100,
-      "required": "true"
-    },
     { "name": "Team #",
       "code": "t",
       "type": "team",
