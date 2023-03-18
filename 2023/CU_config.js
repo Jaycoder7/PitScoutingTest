@@ -43,7 +43,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Has Auto?",
+    { "name": "Does the robot move?(has auto?)",
       "code": "am",
       "type": "bool"
     },
@@ -84,10 +84,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "High Cube Scored",
       "code": "tuh",
       "type": "counter"
@@ -112,14 +108,15 @@ var config_data = `
       "code": "tol",
       "type": "counter"
     },
-   
-    { "name": "Can Defend?",
-      "code": "wd",
-      "type": "bool"
-    },
-    { "name": "Smart Placement (creates Links)",
-      "code": "lnk",
-      "type": "bool"
+    { "name": "Score preference",
+      "code": "cif",
+      "type": "radio",
+      "choices": {
+        "Cone": "Cone<br>",
+        "Cube": "Cube<br>",
+        "both": "Both<br>"
+      },
+      "defaultValue": "both"
     },
     { "name": "Cargo Intake From",
       "code": "cif",
@@ -133,11 +130,6 @@ var config_data = `
       "defaultValue": "both"
     }
   ],
-  "endgame": [
-    { "name": "Docking Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -151,50 +143,6 @@ var config_data = `
       "defaultValue": "parked"
     }
   ],
-  "postmatch": [
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "not effective": "Not Effective<br>",
-        "average": "Average<br>",
-        "very effective": "Very Effective<br>",
-        "not observed": "Not Observed"
-      },
-      "defaultValue": "average"
-    },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
-    },
-    { "name": "Defense Rating",
-      "code": "dr",
-      "type": "radio",
-      "choices": {
-        "below average": "Below Average<br>",
-        "average": "Average<br>",
-        "good": "Good<br>",
-        "excellent": "Excellent<br>",
-        "did not play defense": "Did not play defense"
-      },
-      "defaultValue": "good"
-    },
-    { "name": "Drive Type?",
-      "code": "sd",
-      "type": "bool"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Make good alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
@@ -205,16 +153,6 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 50
-    },
-    { "name": "Confidence Rating",
-      "code": "cnf",
-      "type": "radio",
-      "choices": {
-        "very confident": "Very Confident<br>",
-        "average": "Average<br>",
-        "not confident": "Not Confident"
-        },
-      "defaultValue": "average"
     }
   ]
 }`;
