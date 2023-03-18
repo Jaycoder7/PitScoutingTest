@@ -4,7 +4,7 @@ var config_data = `
   "title": "Scouting App 2023",
   "page_title": "PIT SCOUTING APP",
   "checkboxAs": "YN",
-  "prematch": [
+  "PIT SCOUT": [
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
@@ -40,9 +40,7 @@ var config_data = `
         "Mechanum": "Mechanum"
       },
       "defaultValue": "Tank"
-    }
-  ],
-  "auton": [
+    },
     { "name": "Does the robot move?(has auto?)",
       "code": "am",
       "type": "bool"
@@ -81,9 +79,7 @@ var config_data = `
         "Not Attemmpted": "Not attempted"
       },
       "defaultValue": "docked"
-    }
-  ],
-  "teleop": [
+    },
     { "name": "High Cube Scored",
       "code": "tuh",
       "type": "counter"
@@ -141,9 +137,8 @@ var config_data = `
         "not attempted": "Not attempted"
       },
       "defaultValue": "parked"
-    }
-  ],
-  "Endgame": [
+    },
+
     { "name": "Make good alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
