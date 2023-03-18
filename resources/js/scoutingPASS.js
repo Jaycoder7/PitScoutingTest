@@ -6,6 +6,25 @@
 document.addEventListener("touchstart", startTouch, false);
 document.addEventListener("touchend", moveTouch, false);
 
+const webcamElement = document.getElementById('webcam');
+const canvasElement = document.getElementById('canvas');
+const webcam = new Webcam(webcamElement, 'user', canvasElement);
+
+webcam.start()
+   .then(result =>{
+      console.log("webcam started");
+   })
+   .catch(err => {
+       console.log(err);
+   });
+
+
+function picture(){
+let picture = webcam.snap();	
+document.querySelector('#download-photo').href = picture;
+	
+}
+
 // Swipe Up / Down / Left / Right
 var initialX = null;
 var xThreshold = 0.3;
@@ -205,12 +224,12 @@ function addFieldImage(table, idx, name, data) {
   cell.setAttribute("colspan", 2);
   cell.setAttribute("style", "text-align: center;");
   // Undo button
-  var undoButton = document.createElement("input");
-  undoButton.setAttribute("type", "button");
-  undoButton.setAttribute("onclick", "undo(this.parentElement)");
-  undoButton.setAttribute("value", "Undo");
-  undoButton.setAttribute("id", "undo_" + data.code);
-  undoButton.setAttribute("class", "undoButton");
+  var picButton = document.createElement("input");
+  picButton.setAttribute("type", "button");
+  picButton.setAttribute("onclick", "picture()");
+  picButton.setAttribute("value", "picture");
+  picButton.setAttribute("id", "undo_" + data.code);
+  picButton.setAttribute("class", "picButton");
   cell.appendChild(undoButton);
   // Flip button
   var flipButton = document.createElement("input");
