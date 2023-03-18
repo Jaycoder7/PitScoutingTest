@@ -8,7 +8,7 @@ document.addEventListener("touchend", moveTouch, false);
 
 const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
-const webcam = new Webcam(webcamElement, 'user', canvasElement);
+const webcam = new webcam(webcamElement, 'user', canvasElement);
 
 webcam.start()
    .then(result =>{
