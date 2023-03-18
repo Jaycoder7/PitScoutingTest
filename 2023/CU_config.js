@@ -143,7 +143,7 @@ var config_data = `
       "defaultValue": "parked"
     }
   ],
-  "Post Game": [
+  "Endgame": [
     { "name": "Make good alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
