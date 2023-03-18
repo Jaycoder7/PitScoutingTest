@@ -32,7 +32,7 @@ var config_data = `
       "required": "true",
     }, 
     { "name": "Drivetrain",
-      "code": "ad",
+      "code": "DT",
       "type":"radio",
       "choices": {
         "Swerve": "Swerve<br>",
