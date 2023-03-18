@@ -24,6 +24,7 @@ var options = {
 //var requiredFields = ["e", "m", "l", "t", "r", "s", "as"];
 var requiredFields = ["e", "t", "s", "w"];
 
+// timer event 
 function addTimer(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -38,7 +39,7 @@ function addTimer(table, idx, name, data) {
     cell1.setAttribute("title", data.tooltip);
   }
   cell2.classList.add("field");
-
+// cycle event: different from timer because of mulitple data save function
   if (data.type == 'cycle') {
     var ct = document.createElement('input');
     ct.setAttribute("type", "hidden");
@@ -54,6 +55,7 @@ function addTimer(table, idx, name, data) {
     var lineBreak = document.createElement("br");
     cell2.appendChild(lineBreak);
   }
+	// button for cycle Starts the cycle timer. 
   var button1 = document.createElement("input");
   button1.setAttribute("id", "start_" + data.code);
   button1.setAttribute("type", "button");
