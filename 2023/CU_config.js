@@ -128,8 +128,8 @@ var config_data = `
         "not attempted": "Not Attempted"
       },
       "defaultValue": "both"
-    }
-  ],
+    },
+  
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -143,6 +143,7 @@ var config_data = `
       "defaultValue": "parked"
     }
   ],
+  "Post Game": [
     { "name": "Make good alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
