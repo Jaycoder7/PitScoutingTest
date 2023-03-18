@@ -27,7 +27,7 @@ var config_data = `
     },
     { "name": "Weight",
       "code": "w",
-      "type": "weight",
+      "type": "text",
       "defaultValue": "100",
       "required": "true",
     }, 
