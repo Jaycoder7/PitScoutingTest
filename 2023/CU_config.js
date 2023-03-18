@@ -24,6 +24,22 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
+    },
+    { "name": "Weight",
+      "code": "w",
+      "type": "weight",
+      "defaultValue": "100",
+      "required": "true",
+    }, 
+    { "name": "Drivetrain",
+      "code": "ad",
+      "type":"radio",
+      "choices": {
+        "Swerve": "Swerve<br>",
+        "Tank": "Tank<br>",
+        "Mechanum": "Mechanum"
+      },
+      "defaultValue": "Tank"
     }
   ],
   "auton": [
