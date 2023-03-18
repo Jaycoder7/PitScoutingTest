@@ -4,7 +4,7 @@ var config_data = `
   "title": "Scouting App 2023",
   "page_title": "PIT SCOUTING APP",
   "checkboxAs": "YN",
-  "pit": [
+  "prematch": [
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
