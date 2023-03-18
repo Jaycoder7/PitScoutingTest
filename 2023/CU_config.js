@@ -27,9 +27,9 @@ var config_data = `
     },
     { "name": "Weight",
       "code": "w",
-      "type": "text",
+      "type": "scouter",
       "defaultValue": "100",
-      "required": "true",
+      "required": "true"
     }, 
     { "name": "Drivetrain",
       "code": "DT",
