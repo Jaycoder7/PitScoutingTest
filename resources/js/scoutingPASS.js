@@ -2,29 +2,12 @@
 //
 // The guts of the ScountingPASS application
 // Written by Team 2451 - PWNAGE
-import Webcam from 'webcam-easy';
+
 
 document.addEventListener("touchstart", startTouch, false);
 document.addEventListener("touchend", moveTouch, false);
 
-const webcamElement = document.getElementById('webcam');
-const canvasElement = document.getElementById('canvas');
-const Webcam = new webcam(webcamElement, 'user', canvasElement);
 
-webcam.start()
-   .then(result =>{
-      console.log("webcam started");
-   })
-   .catch(err => {
-       console.log(err);
-   });
-
-
-function picture(){
-let picture = webcam.snap();	
-document.querySelector('#download-photo').href = picture;
-	
-}
 
 // Swipe Up / Down / Left / Right
 var initialX = null;
