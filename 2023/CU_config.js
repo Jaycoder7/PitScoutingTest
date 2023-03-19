@@ -105,7 +105,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Score preference",
-      "code": "cif",
+      "code": "Sp",
       "type": "radio",
       "choices": {
         "Cone": "Cone<br>",
