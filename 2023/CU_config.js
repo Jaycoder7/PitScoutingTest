@@ -41,31 +41,31 @@ var config_data = `
       },
       "defaultValue": "Tank"
     },
-    { "name": "Does the robot move?(has auto?)",
+    { "name": "Mobility during auto",
       "code": "am",
       "type": "bool"
     },
-    { "name": "High Cube Scored",
+    { "name": "🟪 High Cube Scored (auto)",
       "code": "auh",
       "type": "counter"
     },
-    { "name": "Medium Cube Scored",
+    { "name": "🟪 Medium Cube Scored (auto)",
       "code": "aum",
       "type": "counter"
     },
-    { "name": "Low Cube Scored",
+    { "name": "🟪 Low Cube Scored (auto)",
       "code": "aul",
       "type": "counter"
     },
-    { "name": "High Cone Scored",
+    { "name": "⚠️ High Cone Scored (auto)",
       "code": "aoh",
       "type": "counter"
     },
-    { "name": "Medium Cone Scored",
+    { "name": "⚠️ Medium Cone Scored (auto)",
       "code": "aom",
       "type": "counter"
     },
-    { "name": "Low Cone Scored",
+    { "name": "⚠️ Low Cone Scored (auto)",
       "code": "aol",
       "type": "counter"
     },
@@ -80,27 +80,27 @@ var config_data = `
       },
       "defaultValue": "docked"
     },
-    { "name": "High Cube Scored",
+    { "name": "🟪 High Cube Scored (teleop)",
       "code": "tuh",
       "type": "counter"
     },
-    { "name": "Medium Cube Scored",
+    { "name": "🟪 Medium Cube Scored (teleop)",
       "code": "tum",
       "type": "counter"
     },
-    { "name": "Low Cube Scored",
+    { "name": "🟪 Low Cube Scored (teleop)",
       "code": "tul",
       "type": "counter"
     },
-    { "name": "High Cone Scored",
+    { "name": "⚠️ High Cone Scored (teleop)",
       "code": "toh",
       "type": "counter"
     },
-    { "name": "Medium Cone Scored",
+    { "name": "⚠️ Medium Cone Scored (teleop)",
       "code": "tom",
       "type": "counter"
     },
-    { "name": "Low Cone Scored",
+    { "name": "⚠️ Low Cone Scored (teleop)",
       "code": "tol",
       "type": "counter"
     },
