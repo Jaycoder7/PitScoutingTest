@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023gacmp",
+      "defaultValue": "1",
       "required": "true",
       "disabled": "false"
     },
@@ -37,88 +37,74 @@ var config_data = `
       "choices": {
         "Swerve": "Swerve<br>",
         "Tank": "Tank<br>",
+        "wc": "West Coast<br>",
         "Mechanum": "Mechanum"
       },
       "defaultValue": "Tank"
     },
-    { "name": "Mobility during auto",
-      "code": "am",
+    { "name": "Number of Auto",
+      "code": "na",
+      "type": "counter"
+    },
+    { "name": "Mobility during auto(1)",
+      "code": "am1",
       "type": "bool"
     },
-    { "name": "🟪 High Cube Scored (auto)",
-      "code": "auh",
+    { "name": "Amp score(auto 1)",
+      "code": "as1",
       "type": "counter"
     },
-    { "name": "🟪 Medium Cube Scored (auto)",
-      "code": "aum",
+    { "name": "Speaker score(auto 1)",
+      "code": "ss1",
       "type": "counter"
     },
-    { "name": "🟪 Low Cube Scored (auto)",
-      "code": "aul",
+    { "name": "Mobility during auto(2)",
+      "code": "am2",
+      "type": "bool"
+    },
+    { "name": "Amp score(auto 2)",
+      "code": "as2",
       "type": "counter"
     },
-    { "name": "⚠️ High Cone Scored (auto)",
-      "code": "aoh",
+    { "name": "Speaker score(auto 2)",
+      "code": "ss2",
       "type": "counter"
     },
-    { "name": "⚠️ Medium Cone Scored (auto)",
-      "code": "aom",
+    { "name": "Mobility during auto(3)",
+      "code": "am2",
+      "type": "bool"
+    },
+   { "name": "Amp score(auto 3)",
+      "code": "as3",
       "type": "counter"
     },
-    { "name": "⚠️ Low Cone Scored (auto)",
-      "code": "aol",
+    { "name": "Speaker score(auto 3)",
+      "code": "ss3",
       "type": "counter"
     },
-    { "name": "Trys to dock?",
-      "code": "ad",
-      "type":"radio",
-      "choices": {
-        "docked": "Docked (not Engaged)<br>",
-        "engaged": "Engaged<br>",
-        "attempted but failed": "Attempted but failed<br>",
-        "Not Attemmpted": "Not attempted"
-      },
-      "defaultValue": "docked"
-    },
-    { "name": "🟪 High Cube Scored (teleop)",
-      "code": "tuh",
+    { "name": "Amp Score(teleop)",
+      "code": "ast",
       "type": "counter"
     },
-    { "name": "🟪 Medium Cube Scored (teleop)",
-      "code": "tum",
-      "type": "counter"
-    },
-    { "name": "🟪 Low Cube Scored (teleop)",
-      "code": "tul",
-      "type": "counter"
-    },
-    { "name": "⚠️ High Cone Scored (teleop)",
-      "code": "toh",
-      "type": "counter"
-    },
-    { "name": "⚠️ Medium Cone Scored (teleop)",
-      "code": "tom",
-      "type": "counter"
-    },
-    { "name": "⚠️ Low Cone Scored (teleop)",
-      "code": "tol",
+    { "name": "Speaker Score(teleop)",
+      "code": "sst",
       "type": "counter"
     },
     { "name": "Score preference",
       "code": "Sp",
       "type": "radio",
       "choices": {
-        "Cone": "Cone<br>",
-        "Cube": "Cube<br>",
+        "amp": "Amp<br>",
+        "speaker": "Speaker<br>",
         "both": "Both<br>"
       },
       "defaultValue": "both"
     },
-    { "name": "Cargo Intake From",
-      "code": "cif",
+    { "name": "Note Intake From",
+      "code": "nif",
       "type": "radio",
       "choices": {
-        "Substation": "Substation<br>",
+        "Substation": "Score<br>",
         "ground": "Ground<br>",
         "both": "Both<br>",
         "not attempted": "Not Attempted"
@@ -131,8 +117,8 @@ var config_data = `
       "type":"radio",
       "choices": {
         "parked": "Parked<br>",
-        "docked(not engaged)": "Docked (Not Engaged)<br>",
-        "engaged": "Engaged<br>",
+        "onns": "Onstage (Not Spotlit)<br>",
+        "ons": "Onstage(Spotlit)<br>",
         "attempted but failed": "Attempted but failed<br>",
         "not attempted": "Not attempted"
       },
