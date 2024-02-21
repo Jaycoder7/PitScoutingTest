@@ -82,11 +82,11 @@ var config_data = `
       "code": "ss3",
       "type": "counter"
     },
-    { "name": "Amp Score(teleop)",
+    { "name": "Amp Score(TELEOP)",
       "code": "ast",
       "type": "counter"
     },
-    { "name": "Speaker Score(teleop)",
+    { "name": "Speaker Score(TELEOP)",
       "code": "sst",
       "type": "counter"
     },
