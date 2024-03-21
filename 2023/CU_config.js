@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "1",
+      "defaultValue": "2024gacar",
       "required": "true",
       "disabled": "false"
     },
