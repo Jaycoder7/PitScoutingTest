@@ -71,7 +71,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Mobility during auto(3)",
-      "code": "am2",
+      "code": "am3",
       "type": "bool"
     },
    { "name": "Amp score(auto 3)",
